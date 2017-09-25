@@ -1,0 +1,38 @@
+NOISEX 9000 Doc
+
+Classes:
+    Program
+        Handles main stuff, and saving
+
+    UIBuilder
+        Builds UI
+
+    NoiseCanvas
+        Handles actual noise drawing.
+        Methods:
+            public WritableImage capture ():
+                capture current noise image as WritableImage.
+
+            public void startAnimation ():
+                start animation, use this in control.
+
+            public void stopAnimation ():
+                stopAnimation, use this in control.
+
+    Noise
+        Contains all noise related calculations as static methods.
+
+Enums:
+    NoiseType
+    Describes core pattern of generated noise:
+        VALUE, PERLIN, SIMPLEX, WORLEY
+
+    NoisePatternType
+    Describes additional pattern of generated noise:
+        NONE, FRACTIONAL_BROWNIAN_MOTION, DOMAIN_WARPING
+
+    NoiseEnumValue
+    Is used to tell NoiseCanvas which one of above enums is being set.
+
+    NoiseValue
+    Is used to tell NoiseCanvas what type of value is being set.
