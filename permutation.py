@@ -1,4 +1,4 @@
-# This creates randomized permutation table
+# This prints randomized permutation table
 
 import random
 

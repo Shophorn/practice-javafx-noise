@@ -42,10 +42,9 @@ public class NoiseCanvas extends Canvas
         drawOnCanvas ();
     }
 
-    // Make sense of these numbers somehow
-    private static final double toSeconds = (1000 * 1000 * 1000);
     private void animate (long now)
     {
+        // Make sense of these numbers somehow
         timeValue += animationSpeed * now / 10_000_000_000_000.0;//toSeconds / 10000.0;
         drawOnCanvas ();
     }
@@ -114,12 +113,13 @@ public class NoiseCanvas extends Canvas
 
     private void drawOnCanvas ()
     {
-        draw (canvasWriter);
+        final WritableImage image = new WritableImage (width, height);
+        draw (image.getPixelWriter ());
+        graphics.drawImage(image, 0, 0);
     }
 
     private void draw (PixelWriter targetWriter)
     {
-        // System.out.println ("drawOnCanvasn" + timeValue);
         double wHalf = width / 2.0;
         double hHalf = height / 2.0;
 
