@@ -1,6 +1,6 @@
 package noiseprogram;
 
-public enum NoiseEnumValue
+public enum ImageEnumValue
 {
     TYPE,
     PATTERN_TYPE

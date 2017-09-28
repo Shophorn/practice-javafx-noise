@@ -1,8 +1,0 @@
-source/noiseprogram/Noise.java
-source/noiseprogram/NoiseCanvas.java
-source/noiseprogram/NoiseEnumValue.java
-source/noiseprogram/NoisePatternType.java
-source/noiseprogram/NoiseType.java
-source/noiseprogram/NoiseValue.java
-source/noiseprogram/Program.java
-source/noiseprogram/UIBuilder.java

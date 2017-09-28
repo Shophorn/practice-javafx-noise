@@ -1,6 +1,4 @@
-package noiseprogram;
-
-import shophorn.Maths;
+package shophorn;
 
 public class Noise
 {
@@ -132,7 +130,7 @@ public class Noise
         // return (
         //     (1-tz) * ((1-ty) * ((1-tx) * v000 + tx * v100) + ty * ((1-tx) * v010 + tx * v110)) +
         //     tz * ((1-ty) * ((1-tx) * v001 + tx * v101) + ty * ((1-tx) * v011 + tx * v111))
-        // ) / hashMask;        
+        // ) / hashMask;
 
         // return (
         //     (1-tz) * (1-ty) * (1-tx) * v000 +
@@ -143,14 +141,14 @@ public class Noise
         //     tz * (1-ty) * tx * v101 +
         //     tz * ty * (1-tx) * v011 +
         //     tz * ty * tx * v111
-        // ) / hashMask;      
+        // ) / hashMask;
 
             // return Maths.lerp (
             //     (
             //         (v000 + (v100 - v000) * tx) +
             //         (v010 + (v110 - v010) * tx) * ty -
             //         (v000 + (v100 - v000) * tx) * ty
-            //     ), 
+            //     ),
             //     (
             //         (v001 + (v101 - v001) * tx) +
             //         (v011 + (v111 - v011) * tx) * ty -
@@ -190,7 +188,7 @@ public class Noise
         //     Maths.lerp (Maths.lerp (h000, h100, tx), Maths.lerp (h010, h110, tx), ty),
         //     Maths.lerp (Maths.lerp (h001, h101, tx), Maths.lerp (h011, h111, tx), ty),
         //     tz
-        // ) / hashMask; 
+        // ) / hashMask;
     }
 
     public static double fbm (double x, double y, double z, double frequency, int octaves, double gain, double lacunarity)

@@ -1,4 +1,6 @@
 source/shophorn/Maths.java
+source/shophorn/Noise.java
 source/shophorn/StopWatch.java
+
 source/shophorn/fields/IntegerField.java
 source/shophorn/fields/DoubleField.java

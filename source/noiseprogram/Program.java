@@ -3,6 +3,8 @@ package noiseprogram;
 import javafx.application.*;
 import javafx.stage.*;
 import javafx.scene.*;
+import javafx.scene.layout.*;
+import javafx.scene.control.*;
 
 import java.awt.image.*;
 import javafx.embed.swing.SwingFXUtils;
@@ -17,11 +19,26 @@ public class Program extends Application
     private static Stage stage;
     public void start (Stage stage)
     {
-        Scene scene = new UIBuilder().build (this, stage);
+        BorderPane borderPane = new BorderPane ();
 
-        stage.setScene (scene);
+        MenuBar menuBar = new MenuBar();
+        menuBar.getMenus ().add(new FileMenu());
+        borderPane.setTop(menuBar);
+
+        ImageCanvas image = new ImageCanvas ();
+        borderPane.setCenter (image);
+
+        ControlsGrid controls = new ControlsGrid (image);
+        borderPane.setRight (controls);
+
+        stage.setScene (new Scene (borderPane));
         stage.setTitle ("NoiseX 9000");
         stage.show();
+    }
+
+    public static void exit (int status)
+    {
+        System.exit (status);
     }
 
     public static void saveToFile (WritableImage image)

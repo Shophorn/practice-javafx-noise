@@ -2,5 +2,5 @@ package noiseprogram;
 
 public enum NoiseType
 {
-    VALUE
+    VALUE, PERLIN
 }

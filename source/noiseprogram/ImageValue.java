@@ -1,6 +1,6 @@
 package noiseprogram;
 
-public enum NoiseValue
+public enum ImageValue
 {
     FREQUENCY,
     OCTAVES,

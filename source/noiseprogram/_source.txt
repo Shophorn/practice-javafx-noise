@@ -1,0 +1,9 @@
+source/noiseprogram/Program.java
+source/noiseprogram/ImageCanvas.java
+source/noiseprogram/ControlsGrid.java
+source/noiseprogram/FileMenu.java
+
+source/noiseprogram/ImageEnumValue.java
+source/noiseprogram/NoisePatternType.java
+source/noiseprogram/NoiseType.java
+source/noiseprogram/ImageValue.java

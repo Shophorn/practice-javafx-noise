@@ -8,8 +8,8 @@ this or anything, please let me know. This is my first stuff ever.
 
 To compile:
 1. navigate to practice-javafx-noise folder.
-2. run: javac @options.txt @source/shophorn/\_sources.txt
-3. run: javac @options.txt @source/noiseprogram/\_sources.txt
+2. run: javac @options.txt @source/shophorn/\_source.txt
+3. run: javac @options.txt @source/noiseprogram/\_source.txt
 
 To run:
 1. navigate to practice-javafx-noise folder
