@@ -38,7 +38,7 @@ public class ControlsGrid extends GridPane
         addDoubleSliderRow ("Z Offset", -100.0, 100.0, 0.0, ImageValue.Z_OFFSET);
 
         addAnimationControls ();
-        addDoubleSliderRow ("Animation Speed", 1.0, 0.0, 100.0, ImageValue.ANIMATION_SPEED);
+        addDoubleSliderRow ("Animation Speed", 0.0, 100.0, 1.0, ImageValue.ANIMATION_SPEED);
 
     }
 
@@ -62,7 +62,7 @@ public class ControlsGrid extends GridPane
         );
 
         field.setOnAction (
-            (event) -> slider.setValue(field.intValue ())
+            (event) -> slider.setValue(field.getValue ())
         );
 
         slider.setValue (defaultValue);
@@ -88,7 +88,7 @@ public class ControlsGrid extends GridPane
         );
 
         field.setOnAction (
-            (event) -> slider.setValue (field.doubleValue ())
+            (event) -> slider.setValue (field.getValue ())
         );
 
         slider.setValue (defaultValue);

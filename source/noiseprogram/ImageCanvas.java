@@ -14,7 +14,6 @@ public class ImageCanvas extends Canvas
     int width = 600;
     int height = 600;
 
-
     private double frequency = 1.0;
     private int octaves = 1;
     private double gain = 0.5;
@@ -25,7 +24,6 @@ public class ImageCanvas extends Canvas
     private double animationSpeed = 1.0;
 
     private NoisePatternType patternType = NoisePatternType.NONE;
-
 
     private double timePosition;
     private final double animationTimeScale = 0.01;
@@ -121,9 +119,9 @@ public class ImageCanvas extends Canvas
         {
             for (double x = 0; x < width; x++)
             {
-                double sampleX = x / width - hWidth;
-                double sampleY = y / height - hHeight;
-                double sampleZ = timePosition;
+                double sampleX = x / width - hWidth + xOffset;
+                double sampleY = y / height - hHeight + yOffset;
+                double sampleZ = timePosition + zOffset;
                 double value = 0.0;
                 switch (patternType)
                 {

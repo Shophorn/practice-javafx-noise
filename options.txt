@@ -1,2 +1,2 @@
 -d classes
--cp classes
+-cp lib/shophorn.jar
